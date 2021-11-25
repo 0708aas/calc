@@ -5,57 +5,88 @@
   <title>Title</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="media.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Noto+Serif:wght@400;700&family=Oswald:wght@600&display=swap"
+    rel="stylesheet">
 </head>
 <body>
 
-
 <div class="block">
-  <h2>Калькулятор</h2>
-<input class="top-in" id="left-input" type="number">
+  <h2>
+    <span class="o">C</span>
+    <span class="m">A</span>
+    <span class="a">L</span>
+    <span class="b">C</span>
+    <span class="c">U</span>
+    <span class="d">L</span>
+    <span class="e">A</span>
+    <span class="f">T</span>
+    <span class="t">O</span>
+    <span class="e">R</span></h2>
 
-<span  id="sym"></span>
 
-<input class="top-in" id="right-input" type="number">
 
- <span>=</span>
 
-<input class="top-on" id="result" readonly type="number">
 
-<div><br></div>
+  <input class="top-in" id="left-input" type="number">
+
+  <span id="sym"></span>
+
+  <input class="top-in" id="right-input" type="number">
+
+
+
+  <span class="sym">=</span> <input class="top-on" id="result" readonly type="number">
+
+  <div><br></div>
   <hr>
-<button disabled class="button" id="plus">+</button>
-<button disabled class="button" id="minus">-</button>
-<button disabled class="button" id="multiply">*</button>
-<button  disabled class="button" id="divide">/</button>
+  <button disabled class="button" id="plus">+</button>
+  <button disabled class="button" id="minus">-</button>
+  <button disabled class="button" id="multiply">*</button>
+  <button disabled class="button" id="divide">/</button>
   <hr>
-<div><br></div>
+  <div><br></div>
 
-<button disabled class="root" id="degree">степень</button>
-<button  class="root" id="root">корень</button>
+  <button disabled class="root" id="degree">степень</button>
+  <button class="root" id="root">корень</button>
 
   <hr>
   <div><br></div>
 
-  <input  id="inputOne" class="input-two" type="text">
+  <input id="inputOne" class="input-two" type="text">
 
-  <input readonly id="oneResult" class="input-two"  type="number">
+  <input readonly id="oneResult" class="input-two" type="number">
 
-  <button  id="min" class="button">min</button>  <button  id="max" class="button">max</button>
+  <button id="min" class="button-1">min</button>
+  <button id="max" class="button-1">max</button>
 
 
 </div>
 
 <div class="block-2">
 
-  <h3>результаты</h3>
+  <h3>
+    <span class="r">R</span>
+    <span class="e">E</span>
+    <span class="s">S</span>
+    <span class="u">U</span>
+    <span class="l">L</span>
+    <span class="t">T</span>
+    <span class="s">S</span>
+  </h3>
+
 
   <ul id="todo"></ul>
 
+
+
+</div>
+<div class="block-but">
+  <button class="delete" id="delete">очистить</button>
 </div>
 
-
-
-<div class="block-but"> <button class="delete" id="delete">очистить</button> </div>
 
 <script src="script.js"></script>
 </body>

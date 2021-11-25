@@ -114,11 +114,6 @@ rightInput.addEventListener('input', () => {
 })
 
 
-
-
-
-
-
 const oneResult = document.querySelector('#oneResult')
 
 const inputOne = document.querySelector('#inputOne')
@@ -141,43 +136,36 @@ const min = document.querySelector('#min')
 const todo = document.querySelector('#todo')
 
 
-
-
-
-
-
 const delBtn = document.querySelector('#delete')
-
 
 
 delBtn.addEventListener('click', () => {
     if (confirm('Ты уверен?'))
         todo.innerHTML = ''
-        todo.value = ''
+    todo.value = ''
 })
-
 
 
 max.addEventListener('click', () => {
     oneResult.value = Math.max(...inputOne.value.split(' '))
-addHistory()
+    addHistory()
 })
 
 
 min.addEventListener('click', () => {
     oneResult.value = Math.min(...inputOne.value.split(' '))
-addHistory()
+    addHistory()
 })
 
 
 inputOne.addEventListener('keydown', (e) => {
-    if(!(e.key >= 0 && e.key <= 9) && e.key !== 'Backspace' && e.key !== '-' ){
+    if (!(e.key >= 0 && e.key <= 9) && e.key !== 'Backspace' && e.key !== '-') {
         e.preventDefault()
     }
 })
 
 const addHistory = () => {
-    const li  = document.createElement('li')
+    const li = document.createElement('li')
     li.textContent = `${inputOne.value}  => ${oneResult.value}`
     todo.append(li)
 }
